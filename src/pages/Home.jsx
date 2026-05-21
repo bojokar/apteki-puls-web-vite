@@ -15,6 +15,8 @@ import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import { pharmacies, promotions } from '../data.js';
 
 export default function Home() {
+  const assetBase = import.meta.env.BASE_URL;
+
   return (
     <>
       <Box
@@ -28,7 +30,7 @@ export default function Home() {
           overflow: 'hidden',
         }}
       >
-        <Box className="heroImage" />
+        <Box className="heroImage" sx={{ backgroundImage: `url(${assetBase}pharmacy-hero.png)` }} />
         <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 2, py: { xs: 7, md: 10 } }}>
           <Stack spacing={3} sx={{ width: { xs: '100%', md: '54%' } }}>
             <Chip label="Денонощно ниски цени!" color="secondary" sx={{ width: 'fit-content', fontWeight: 800 }} />

@@ -29,6 +29,7 @@ const navItems = [
 export default function Header() {
   const [open, setOpen] = useState(false);
   const { mode, toggleColorMode } = useColorMode();
+  const assetBase = import.meta.env.BASE_URL;
 
   const nav = (
     <>
@@ -66,7 +67,7 @@ export default function Header() {
           >
             <Box
               component="img"
-              src="/logo-heart.png"
+              src={`${assetBase}logo-heart.png`}
               alt="Аптеки Пулс"
               sx={{
                 width: 48,
@@ -80,7 +81,7 @@ export default function Header() {
             />
             <Box
               component="img"
-              src="/logo-puls-full.png"
+              src={`${assetBase}logo-puls-full.png`}
               alt="Денонощни аптеки Пулс"
               sx={{
                 width: { sm: 210, md: 250 },

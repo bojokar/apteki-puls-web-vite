@@ -10,6 +10,8 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 const values = ['Отговорна консултация', 'Внимание към всеки клиент', 'Подбрани продукти', 'Удобни локации'];
 
 export default function About() {
+  const assetBase = import.meta.env.BASE_URL;
+
   return (
     <Container maxWidth="lg" sx={{ py: { xs: 5, md: 8 } }}>
       <Grid container spacing={5} alignItems="center">
@@ -34,7 +36,7 @@ export default function About() {
               minHeight: 360,
               borderRadius: 2,
               bgcolor: 'background.paper',
-              backgroundImage: 'linear-gradient(135deg, rgba(0,121,107,.18), rgba(239,108,87,.18)), url(/pharmacy-hero.png)',
+              backgroundImage: `linear-gradient(135deg, rgba(197,31,36,.18), rgba(244,234,216,.26)), url(${assetBase}pharmacy-hero.png)`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               boxShadow: 6,

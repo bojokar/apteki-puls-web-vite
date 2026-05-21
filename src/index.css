@@ -24,7 +24,6 @@ body {
 .heroImage {
   position: absolute;
   inset: 0;
-  background-image: url('/pharmacy-hero.png');
   background-size: cover;
   background-position: center right;
   transform: scale(1.02);

@@ -8,6 +8,8 @@ import PlaceIcon from '@mui/icons-material/Place';
 import { pharmacies } from '../data.js';
 
 export default function Footer() {
+  const assetBase = import.meta.env.BASE_URL;
+
   return (
     <Box component="footer" sx={{ borderTop: 1, borderColor: 'divider', py: 4, bgcolor: 'background.paper' }}>
       <Container maxWidth="lg">
@@ -15,7 +17,7 @@ export default function Footer() {
           <Box>
             <Box
               component="img"
-              src="/logo-heart.png"
+              src={`${assetBase}logo-heart.png`}
               alt="Аптеки Пулс"
               sx={{ width: 74, height: 74, objectFit: 'contain', mb: 1 }}
             />
